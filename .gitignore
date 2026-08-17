@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+.pnpm-store/
+release/
+*.log
+
+# Windows 系统文件
+Thumbs.db
+ehthumbs.db
+desktop.ini

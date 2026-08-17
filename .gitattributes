@@ -1,0 +1,13 @@
+# 仓库级换行符策略（与 core.autocrlf=true 配合）
+# 文本文件入库统一为 LF，Windows 检出时按规则自动转换
+
+* text=auto
+
+# Windows 脚本：保持 CRLF（cmd 兼容性最佳）
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 二进制文件：禁止任何换行转换
+*.png binary
+*.ico binary
